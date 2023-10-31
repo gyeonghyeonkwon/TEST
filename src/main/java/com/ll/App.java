@@ -43,12 +43,12 @@ public class App {
                 int id = 0;
 
                 for (int i = 0; i < queryStringBits.length; i++) { //queryStringBits 번 까지 실행
-                    String queryParamStr = queryStringBits[i];
+                    String queryParamStr = queryStringBits[i]; // [id=2] 를 queryParamStr 로 저장
 
-                    String[] queryParamStrBits = queryParamStr.split("=", 2);
+                    String[] queryParamStrBits = queryParamStr.split("=", 2); // id =2 를 "id" , "2" 로 나눈다.
 
-                    String paramName = queryParamStrBits[0];
-                    String paramValue = queryParamStrBits[1];
+                    String paramName = queryParamStrBits[0]; //"id" 저장
+                    String paramValue = queryParamStrBits[1]; // "2 " 저장 
 
                     if (paramName.equals("id")) { //id 가 같을경우 아래 구문 실행
                         id = Integer.parseInt(paramValue);
