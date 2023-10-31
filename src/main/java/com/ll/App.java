@@ -47,7 +47,7 @@ public class App {
 
                     String[] queryParamStrBits = queryParamStr.split("=", 2); // id =2 를 "id" , "2" 로 나눈다.
 
-                    String paramName = queryParamStrBits[0];
+                    String paramName = queryParamStrBits[0]; //id 저장 
                     String paramValue = queryParamStrBits[1];
 
                     if (paramName.equals("id")) { //id 가 같을경우 아래 구문 실행
